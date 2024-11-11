@@ -49,6 +49,9 @@ window.onload = function () {
         <div id="caixaBusca">
             <input type="search" placeholder="BUSQUE POR NOME">
         </div>
+        <h2 id="carregando">Carregando...</h2>
+        <div id="container-jogadores">
+        </div>
         `
     } else {
         return

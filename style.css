@@ -132,6 +132,22 @@ header > button {
     border-radius: 10px;
 }
 
+#carregando {
+    animation: 1s ease-out 0s infinite normal none running blink; 
+    display: none; 
+    margin: auto; 
+    width: min-content;
+    color:white
+}
+
+#container-jogadores {
+    display: grid; 
+    gap: 1em; 
+    max-width: 1400px; 
+    margin: auto; 
+    grid-template-columns: 1fr;
+}
+
 @media screen and (min-width: 768px){
     body {
         margin: 8px;
