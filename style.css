@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 8px 0px;
+    background-color: black;
+    color: white;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 100vw;
+    min-width:unset;
+}
+
+#header {
+    text-align: center; 
+    flex: 1 1 0%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+
+#container > div > h1 {
+    font-family: Lexend;
+    margin: 0px;
+}
+
+#container > div > p {
+    margin: 0px auto;
+    max-width: 20em;
+}
+
+#login {
+    text-align: center; 
+    flex: 0.6 1 0%;
+}
+
+#senha {
+    padding: 0.3em; 
+    margin: 0.5em;
+    border-radius: 5px;
+}
+
+#login > button {
+    background-color: white; 
+    border: none;
+    color: black; 
+    text-align: center; 
+    text-decoration: none; 
+    padding: 0.5em 1em; 
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+#login > p {
+    margin: 1em auto;
+}
+
+header {
+    background-color: white; 
+    padding: 0.5em 1em; 
+    position: relative; 
+    display: flex; 
+    flex-direction: row;
+}
+
+header > h1 {
+    color: black; 
+    margin: 0px; 
+    flex-grow: 1;
+}
+
+header > button {
+    background-color: black; 
+    border: none; 
+    color: white; 
+    text-align: center; 
+    text-decoration: none; 
+    padding: 0.5em 1em; 
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+#escolhas {
+    display: none; 
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 2em; 
+    margin: 2em 0px;
+}
+
+#escolhas > button {
+    background-color: white; 
+    border: none; 
+    color: black; 
+    text-align: center; 
+    text-decoration: none; 
+    padding: 0.5em 5.5em 0.5em 1em ; 
+    cursor: pointer; 
+    font-size: 1.3em; 
+    max-width: 6em;
+    border-radius: 100px;
+}
+
+#select {
+    background-color: white; 
+    border: none; 
+    color: black; 
+    text-align: center; 
+    text-decoration: none; 
+    padding: 1em 1.5em; 
+    display: block; 
+    margin: 1em auto 0.5em; 
+    font-size: larger;
+    border-radius: 100px;
+}
+
+#caixaBusca {
+    text-align: center; 
+    margin: 0px auto 2em;
+}
+
+#caixaBusca > input {
+    text-align: center; 
+    line-height: 3em; 
+    max-width: 80%; 
+    width: 30em;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px){
+    body {
+        margin: 8px;
+    }
+
+    #container {
+        flex-direction: row;
+        margin: auto;
+        width: 70vw;
+        min-width: 800px;
+    }
+    
+    #login > p {
+        margin: 0px auto;
+    }
+
+    #container > div > h1 {
+        font-size: 30px;
+    }
+
+    #escolhas {
+        display: flex;
+    }
+
+    #select {
+        display: none;
+    }
+}
