@@ -6,6 +6,7 @@ body {
     margin: 8px 0px;
     background-color: black;
     color: white;
+    flex-direction: column;
 }
 
 #container {
@@ -17,11 +18,12 @@ body {
 }
 
 #header {
-    text-align: center; 
+    text-align: center;
     flex: 1 1 0%;
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 #container > div > h1 {
@@ -35,23 +37,23 @@ body {
 }
 
 #login {
-    text-align: center; 
+    text-align: center;
     flex: 0.6 1 0%;
 }
 
 #senha {
-    padding: 0.3em; 
+    padding: 0.3em;
     margin: 0.5em;
     border-radius: 5px;
 }
 
 #login > button {
-    background-color: white; 
+    background-color: white;
     border: none;
-    color: black; 
-    text-align: center; 
-    text-decoration: none; 
-    padding: 0.5em 1em; 
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em 1em;
     cursor: pointer;
     border-radius: 100px;
 }
@@ -61,91 +63,159 @@ body {
 }
 
 header {
-    background-color: white; 
-    padding: 0.5em 1em; 
-    position: relative; 
-    display: flex; 
+    background-color: white;
+    padding: 0.5em 1em;
+    position: relative;
+    display: flex;
     flex-direction: row;
+    font-family: Lexend;
 }
 
 header > h1 {
-    color: black; 
-    margin: 0px; 
+    color: black;
+    margin: 0px;
     flex-grow: 1;
 }
 
 header > button {
-    background-color: black; 
-    border: none; 
-    color: white; 
-    text-align: center; 
-    text-decoration: none; 
-    padding: 0.5em 1em; 
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em 1em;
     cursor: pointer;
     border-radius: 100px;
+    font-family: Lexend;
 }
 
 #escolhas {
-    display: none; 
-    flex-direction: row; 
-    justify-content: center; 
-    gap: 2em; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
     margin: 2em 0px;
+    flex-direction: column;
+
 }
 
 #escolhas > button {
-    background-color: white; 
-    border: none; 
-    color: black; 
-    text-align: center; 
-    text-decoration: none; 
-    padding: 0.5em 5.5em 0.5em 1em ; 
-    cursor: pointer; 
-    font-size: 1.3em; 
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em 5.5em 0.5em 1em ;
+    cursor: pointer;
+    font-size: 1.3em;
     max-width: 6em;
     border-radius: 100px;
+    font-family: Lexend;
 }
 
-#select {
-    background-color: white; 
-    border: none; 
-    color: black; 
-    text-align: center; 
-    text-decoration: none; 
-    padding: 1em 1.5em; 
-    display: block; 
-    margin: 1em auto 0.5em; 
-    font-size: larger;
-    border-radius: 100px;
+#filtros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #caixaBusca {
-    text-align: center; 
+    text-align: center;
     margin: 0px auto 2em;
+    font-family: Lexend;
 }
 
 #caixaBusca > input {
-    text-align: center; 
-    line-height: 3em; 
-    max-width: 80%; 
+    text-align: center;
+    line-height: 3em;
+    max-width: 80%;
     width: 30em;
     border-radius: 10px;
-}
-
-#carregando {
-    animation: 1s ease-out 0s infinite normal none running blink; 
-    display: none; 
-    margin: auto; 
-    width: min-content;
-    color:white
+    font-family: Lexend;
 }
 
 #container-jogadores {
-    display: grid; 
-    gap: 1em; 
-    max-width: 1400px; 
-    margin: auto; 
-    grid-template-columns: 1fr;
+    display: grid;
+    gap: 1em;
+    min-width: 80vw;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-self: center;
+}
+
+
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: min-content;
+    width: 275px;
+    height: 400px;
+    font-family: Lexend;
+}
+
+.nome {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.imagem {
+    margin-top: 10px;
+    width: 220px;
+    object-fit: none;
+    height: 300px;
+    object-position: 100% 10%;
+    border: 2px solid black;
+}
+
+.saibaMais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    width: 224px;
+    height: 40px;
+    margin-top: -40px;
+    color: black;
+}
+
+#detalhes {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-direction: column;
+    font-family: Lexend;
+}
+
+.imgDetalhes {
+    width: 80%;
+}
+
+#fotoNome {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    align-items: center;
+}
+
+#fotoNome > p {
+    font-size: 18px;
+    text-align: center;
+
+}
+
+#detalhesAtleta {
+    width: 60%;
+}
+
+#voltar {
+    width: 40%;
+    align-self: center;
 }
 
 @media screen and (min-width: 768px){
@@ -159,7 +229,7 @@ header > button {
         width: 70vw;
         min-width: 800px;
     }
-    
+
     #login > p {
         margin: 0px auto;
     }
@@ -169,10 +239,48 @@ header > button {
     }
 
     #escolhas {
-        display: flex;
+        flex-direction: row;
     }
 
-    #select {
-        display: none;
+    #detalhes {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        flex-direction: row;
+        font-family: Lexend;
+    }
+
+    .imgDetalhes {
+        width: 80%;
+    }
+
+    #fotoNome {
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
+        align-items: center;
+    }
+
+    #fotoNome > p {
+        font-size: 18px;
+        text-align: center;
+
+    }
+
+    #detalhesAtleta {
+        width: 750px;
+    }
+
+    #voltar {
+        width: 80%;
+    }
+
+    #container-jogadores {
+        display: grid;
+        gap: 1em;
+        min-width: 80vw;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: center;
+        align-self: center;
     }
 }
